@@ -1,0 +1,38 @@
+.search-form {
+  display: flex; // Arrange elements horizontally
+  align-items: center; // Align vertically
+
+  width: 100%; // Stretch full width
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap; // Wrap on smaller screens
+  }
+
+  input[type="text"] {
+    flex: 1 1 auto; // Take up remaining space
+    padding: 10px 15px; // Provide some padding
+    border: 1px solid #ccc; // Basic border
+    border-radius: 4px; // Rounded corners
+    font-size: 16px;
+
+    &:focus {
+      outline: none; // Remove default outline
+      border-color: #007bff; // Highlight on focus
+    }
+  }
+
+  button[type="submit"] {
+    background-color: #007bff; // Blue button
+    color: #fff; // White text
+    padding: 8px 15px; // Padding
+    border: none; // No border
+    border-radius: 4px; // Rounded corners
+    font-size: 16px;
+    cursor: pointer; // Change cursor on hover
+
+    &:hover {
+      background-color: #0062cc; // Darker blue on hover
+    }
+  }
+}
+
